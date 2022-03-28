@@ -181,10 +181,10 @@ get_slave_status() {
 }
 
 send_email() {
-    Mailer=$(which mail)
-    if [[ ${#EMAIL} -gt 0 && ${#Mailer} -gt 0 ]]; then
-        echo "$1" | $Mailer -s "$2" $EMAIL
-    fi
+    #Mailer=$(which mail)
+    #if [[ ${#EMAIL} -gt 0 && ${#Mailer} -gt 0 ]]; then
+    #    echo "$1" | $Mailer -s "$2" $EMAIL
+    #fi
 }
 find_best_slave_candidate() {
     # argument is the remote cluster
